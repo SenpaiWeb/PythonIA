@@ -16,6 +16,6 @@ with codecs.open("chat.rc", "a+", "utf-8") as chatFile:
     if (chatFile.read().find("[\""+title+"\",")==-1) and (len(trigger) > 0) and (len(answer) > 0) and (len(title) > 0):
         # full = '"'+title+'": {"trigger": "'+trigger+'", "answer": "'+answer+'", "options": "'+options+'"}' + '\n'
          full = '"'+title+'": {"trigger": "'+trigger+'", "answer": "'+answer+'"}\n'
-        chatFile.write(full)
+         chatFile.write(full)
 time.sleep(1)
 print("Merci à vous de participer au développement de l'IA")
