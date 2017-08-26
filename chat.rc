@@ -1,0 +1,4 @@
+# Please do not manually edit this file, just use add.py instead
+"__welcome__": {"trigger": "Bonjour", "answer": "Bonjour, quel est votre nom?"}
+"__how-are-you__": {"trigger": "ça va?", "answer": "Oui et toi?"}
+"random question": {"trigger": "tu fais quoi?", "answer": "rien et toi?"}
