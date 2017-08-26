@@ -5,7 +5,7 @@ import time
 import codecs
 
 print("Système d'intégration de Q/R à l'IA")
-time.sleep(2)
+time.sleep(1)
 title=input("Titre: ").replace('"', "''")
 trigger=input("Quand l'IA détecte: ").replace('"', "''")
 answer=input("Que doit répondre l'IA? ").replace('"', "''")

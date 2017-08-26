@@ -11,13 +11,14 @@ def getAnswer(trigger):
     try:
         # catch answer with trigger
         m = re.search('{"trigger": "'+re.escape(trigger)+'", "answer": "(.+)"}', answers)
-        return name + ": " + m.group(1)
+        return name + ": " + m.group(1).replace("%n", username)
     except AttributeError:
             return "Je ne comprends pas ce que vous me demandez."
 
 def getTrigger(answer):
+    m = re.search('{"trigger": "(.+)", "answer": "'+answer+'"}', answers)
+    return m.group(1)
 
-    pass
 def getAll(title):
     insideArray = {}
     m = re.search('"'+title+'": {"trigger": "(.+)", "answer": "(.+)"}', answers)
